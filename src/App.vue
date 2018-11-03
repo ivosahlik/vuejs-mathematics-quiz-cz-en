@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div>
-        <h1 class="text-center">The mathematics quiz.</h1>
+        <h1 class="text-center">The mathematics quiz</h1>
       </div>
     </div>
 
