@@ -3,6 +3,7 @@
 ## Project setup
 ```
 vue create project-name
+npm install bootstrap
 npm install
 ```
 
