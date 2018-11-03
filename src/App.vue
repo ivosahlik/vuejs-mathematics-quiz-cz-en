@@ -8,7 +8,7 @@
 
     <div class="row">
       <div>
-        <component v-bind:is="mode" @confirmed="mode = 'app-question'"></component>
+        <component v-bind:is="mode" @answered="answered($event)" @confirmed="mode = 'app-question'"></component>
       </div>
     </div>
   </div>
@@ -29,7 +29,14 @@ export default {
     }
   },
   methods: {
-
+    answered (isCorrect) {
+      if (isCorrect) {
+        this.mode = 'app-answer'
+      } else {
+        this.mode = 'app-question'
+        alert('Wrong, try again!')
+      }
+    }
   }
 }
 </script>
